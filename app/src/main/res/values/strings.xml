@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MediAssist</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="add_record">Add Record</string>
+    <string name="manual_entry">Manual Entry</string>
+    <string name="charts">Charts</string>
+    <string name="records">Records</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Dashboard -->
+    <string name="greeting">Hi, %s — This week looks great</string>
+    <string name="recent_notes">Recent Notes</string>
+    
+    <!-- Add Record -->
+    <string name="scan_from_photo">Scan from Photo</string>
+    <string name="scan_description">Use camera or gallery to extract values with OCR.</string>
+    <string name="open_camera">Open Camera</string>
+    <string name="enter_manually">Enter Manually</string>
+    <string name="manual_description">Log quick readings or fix OCR mistakes.</string>
+    
+    <!-- Manual Entry -->
+    <string name="date">Date</string>
+    <string name="parameter">Parameter</string>
+    <string name="value">Value</string>
+    <string name="unit">Unit</string>
+    <string name="notes">Notes</string>
+    <string name="notes_optional">(Optional)</string>
+    <string name="add_another_parameter">+ Add Another Parameter</string>
+    <string name="save_record">Save Record</string>
+    
+    <!-- Parameters -->
+    <string name="glucose">Glucose</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="cholesterol">Cholesterol</string>
+    <string name="hba1c">HbA1c</string>
+    
+    <!-- Units -->
+    <string name="mg_dl">mg/dL</string>
+    <string name="mmol_l">mmol/L</string>
+    <string name="mmhg">mmHg</string>
+    <string name="percent">%</string>
+    
+    <!-- Status -->
+    <string name="normal">Normal</string>
+    <string name="elevated">Elevated</string>
+    <string name="low">Low</string>
+    <string name="ideal">Ideal</string>
+    
+    <!-- Charts -->
+    <string name="last_3_months">Last 3 Months</string>
+    <string name="last_6_months">Last 6 Months</string>
+    <string name="last_year">Last Year</string>
+    <string name="ideal_range">Ideal Range</string>
+    
+    <!-- Settings -->
+    <string name="export_csv">Export CSV</string>
+    <string name="backup_restore">Backup / Restore</string>
+    <string name="security_pin">Security PIN / Biometrics</string>
+    <string name="about">About MediAssist</string>
+    <string name="advanced">Advanced</string>
+    
+    <!-- Messages -->
+    <string name="record_saved">Record saved successfully</string>
+    <string name="error_saving">Error saving record</string>
+    <string name="no_records">No records available</string>
+    
+    <!-- Common -->
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
