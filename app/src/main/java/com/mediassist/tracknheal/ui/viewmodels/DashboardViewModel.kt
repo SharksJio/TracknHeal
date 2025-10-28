@@ -9,6 +9,7 @@ import kotlinx.coroutines.launch
 import kotlinx.datetime.Clock
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
+import kotlinx.datetime.toInstant
 import kotlin.math.abs
 
 class DashboardViewModel(
@@ -42,15 +43,17 @@ class DashboardViewModel(
                         .firstOrNull()
 
                     if (latestMetric != null) {
-                        val record = records.first { it.metrics.contains(latestMetric) }
+                        val record = records.first { rec -> rec.metrics.contains(latestMetric) }
                         val hoursDiff = (now.toEpochMilliseconds() - 
                             record.dateTime.toInstant(TimeZone.currentSystemDefault()).toEpochMilliseconds()) / (1000 * 60 * 60)
+                        
+                        val hoursDisplay = hoursDiff.toDouble().let { h -> if (h < 1) "< 1" else h.toInt().toString() }
                         
                         cards.add(
                             DashboardMetricCard(
                                 title = paramType.getDisplayName(),
                                 value = latestMetric.getFullValueWithUnit(),
-                                subtitle = "${hoursDiff.toDouble().let { if (it < 1) "< 1" else it.toInt().toString() }} hours ${HealthMetric.getIdealRange(paramType)}",
+                                subtitle = "$hoursDisplay hours ${HealthMetric.getIdealRange(paramType)}",
                                 status = latestMetric.status,
                                 lastUpdated = "$hoursDiff hours"
                             )

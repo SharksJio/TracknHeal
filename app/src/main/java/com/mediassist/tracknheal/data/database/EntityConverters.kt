@@ -4,6 +4,7 @@ import com.mediassist.tracknheal.data.models.*
 import kotlinx.datetime.Instant
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
+import kotlinx.datetime.toInstant
 
 object EntityConverters {
     fun toHealthRecord(entity: HealthRecordEntity, metrics: List<HealthMetricEntity>): HealthRecord {
